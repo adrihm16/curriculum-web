@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum Vitae - Adrián Herrera</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap");
+
+      :root {
+        --primary-blue: #1a365d; /* Azul corporativo profundo */
+        --secondary-blue: #2b6cb0;
+        --bg-grey: #f7fafc; /* Gris muy claro para el fondo */
+        --text-grey: #4a5568; /* Gris oscuro para texto */
+        --text-light: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #e2e8f0;
+        color: var(--text-grey);
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .cv-container {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      /* COLUMNA IZQUIERDA (AZUL) */
+      .left-column {
+        background-color: var(--primary-blue);
+        color: var(--text-light);
+        width: 35%;
+        padding: 40px 30px;
+        text-align: center; /* Centrar foto y títulos de sección si se desea */
+      }
+
+      /* CONTENEDOR DE LA FOTO */
+      .profile-photo-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 30px auto;
+        border-radius: 50%;
+        border: 4px solid var(--secondary-blue);
+        overflow: hidden;
+        background-color: #cbd5e0; /* Fondo gris mientras no haya foto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-photo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .left-column h2 {
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        margin-top: 35px;
+        border-bottom: 2px solid var(--secondary-blue);
+        padding-bottom: 5px;
+      }
+
+      .contact-list,
+      .info-list,
+      .skills-list {
+        list-style: none;
+        text-align: left;
+      }
+
+      .contact-list li,
+      .info-list li,
+      .skills-list li {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+      }
+
+      .contact-list strong {
+        display: block;
+        font-weight: 600;
+        color: #90cdf4;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+
+      .language-item {
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .language-item h4 {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      .language-item p {
+        font-size: 0.9rem;
+        color: #e2e8f0;
+      }
+
+      /* COLUMNA DERECHA */
+      .right-column {
+        background-color: var(--bg-grey);
+        width: 65%;
+        padding: 50px 40px;
+      }
+
+      .header-name h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3rem;
+        color: var(--primary-blue);
+        line-height: 1.1;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+      }
+
+      .right-column h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        color: var(--primary-blue);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .right-column h2::after {
+        content: "";
+        flex: 1;
+        margin-left: 15px;
+        height: 2px;
+        background-color: #cbd5e0;
+      }
+
+      .timeline-item {
+        margin-bottom: 25px;
+      }
+
+      .timeline-item h3 {
+        color: var(--primary-blue);
+        font-size: 1.1rem;
+      }
+
+      .date-role {
+        font-weight: 600;
+        color: var(--secondary-blue);
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .cv-container {
+          flex-direction: column;
+        }
+        .left-column,
+        .right-column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <aside class="left-column">
+        <div class="profile-photo-container">
+          <img src="Foto.jpg" alt="Foto de perfil de Adrián Herrera" />
+        </div>
+
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li><strong>Teléfono</strong> 686 74 31 95</li>
+          <li><strong>Email</strong> adriherm15@gmail.com</li>
+          <li><strong>Web</strong> www.unsitiogenial.es</li>
+          <li>
+            <strong>Dirección</strong> Carretera Puente de Tablas nº 13, Conil,
+            11149
+          </li>
+        </ul>
+
+        <h2>Información</h2>
+        <ul class="info-list">
+          <li>• Carnet de conducir</li>
+          <li>• Disponibilidad para viajar</li>
+        </ul>
+
+        <h2>Idiomas</h2>
+        <div class="language-item">
+          <h4>ESPAÑOL</h4>
+          <p>Nativo</p>
+        </div>
+        <div class="language-item">
+          <h4>INGLÉS</h4>
+          <p>Nivel Avanzado B2 (ISE II Trinity)</p>
+        </div>
+
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+          <li>• OFIMÁTICA</li>
+          <li>• INFORMÁTICA</li>
+          <li>• ASERTIVIDAD</li>
+        </ul>
+      </aside>
+
+      <main class="right-column">
+        <header class="header-name">
+          <h1>Adrián<br />Herrera</h1>
+        </header>
+
+        <section>
+          <h2>Mi Perfil</h2>
+          <p>
+            Estudiante de grado superior de desarrollo de aplicaciones web
+            dispuesto a aprender y empezar mi carrera profesional.
+          </p>
+        </section>
+
+        <section>
+          <h2>Experiencia</h2>
+          <div class="timeline-item">
+            <h3>INFOMEGO S.L.</h3>
+            <div class="date-role">
+              Desarrollador Full stack (febrero 2026-junio 2026)
+            </div>
+            <p>
+              Participación en creación de aplicación corporativa usando
+              tecnologías y frameworks actualizados.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>CONTROLNET</h3>
+            <div class="date-role">
+              Desarrollador FrontEnd (abril 2025 abril 2025)
+            </div>
+            <p>Ayuda desarrollo de webs publicitarias.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Formación</h2>
+          <div class="timeline-item">
+            <h3>IES TRAFALGAR</h3>
+            <div class="date-role">
+              G.C.F.S Desarrollo de aplicaciones web (2024-2026)
+            </div>
+          </div>
+          <div class="timeline-item">
+            <h3>IES LA ATALAYA</h3>
+            <div class="date-role">Bachillerato C.C.S.S (2022-2024)</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
